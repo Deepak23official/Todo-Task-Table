@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+</style>
+<body>
+    <h3>Todo Application Local Storage</h3>
+   <div id="bg-color" class="bg">
+    <div id="task-panel" class="task">
+        <i onclick="Close()" class="fa-solid fa-xmark"></i>
+        <h3>Add New Task Here</h3>
+        <input type="number" id="input" placeholder="Enter your id">
+        <input type="text" id="Name" placeholder="Your Name">
+        <input type="text" id="input1" placeholder="Enter your task">
+        <input type="text" id="status" placeholder="Your Status">
+        <button onclick="Remove()">Submit</button>
+    </div>
+   </div>
+    <div class="container">
+        <div class="body">
+            <div>
+                <input type="Number" id="search" placeholder="Search Your Task">
+                <button onclick="Ser()">Search</button>
+            </div>
+            <button onclick="openTask()">Add Task</button>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Task</th>
+                    <th>Status</th>
+                    <th>Delete</th>
+                </tr>
+                <tbody id="tbody">     
+                    <!-- <tr class="row">
+                        <td class="id">123</td>
+                        <td>dfgd</td>
+                        <td>dfgd</td>
+                        <td>dfgd</td>
+                        <td><i onclick="Del(event)" class="fa-solid fa-trash"></i></td>
+                    </tr>     
+                    <tr class="row">
+                        <td class="id">453</td>
+                        <td>Deepak</td>
+                        <td>Todo</td>
+                        <td>Pending</td>
+                        <td><i onclick="Del(event)" class="fa-solid fa-trash"></i></td>
+                    </tr>                -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
